@@ -23,9 +23,9 @@ $(document).ready(function(){
   
 $(document).ready(function(){
     $(".speaker_slider").owlCarousel({
-        loop:true,
+        // loop:true,
         margin:80,
-        center:true,
+        // center:true,
         responsiveClass:true,
         nav:true,
         dots:false,
@@ -482,12 +482,12 @@ inputpartner5.addEventListener('change', (e) => {
         avtpartner5 = URL.createObjectURL(e.target.files[0]);
         imagepartner5.src=avtpartner5
     }
+    $('#avt-partner-5-edit').hide()
     $('#avt-partner-5').removeClass('d-none')
-    $('#avt-partner-5-input').hide()
 });
 $('#avt-partner-5').click(function(){
     $(this).toggleClass('d-none')
-    $('#avt-partner-5-input').css("display","flex")
+    $('#avt-partner-5-edit').css("display","flex")
 })
 
 // AVT ĐỐI TÁC 6
@@ -499,11 +499,191 @@ inputpartner6.addEventListener('change', (e) => {
         avtpartner6 = URL.createObjectURL(e.target.files[0]);
         imagepartner6.src=avtpartner6
     }
+    $('#avt-partner-6-edit').hide()
     $('#avt-partner-6').removeClass('d-none')
-    $('#avt-partner-6-input').hide()
 });
 $('#avt-partner-6').click(function(){
     $(this).toggleClass('d-none')
-    $('#avt-partner-6-input').css("display","flex")
+    $('#avt-partner-6-edit').css("display","flex")
+})
+
+// TÊN ĐỐI TÁC 1 
+let partnername1
+$('#partner-name-1').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-name-1-edit').css("display","flex")
+})
+document.getElementById('partner-name-1-input').addEventListener('input',e => {
+    partnername1=e.target.value
+})
+$('#partner-name-1-save').click(function(){
+    $('#partner-name-1-edit').hide()
+    $('#partner-name-1').removeClass('d-none')
+    $('#partner-name-1').html(partnername1)
+})
+
+// VAI TRÒ ĐỐI TÁC 1
+let partnerpos1
+$('#partner-pos-1').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-pos-1-edit').css("display","flex")
+})
+document.getElementById('partner-pos-1-input').addEventListener('input',e => {
+    partnerpos1=e.target.value
+})
+$('#partner-pos-1-save').click(function(){
+    $('#partner-pos-1-edit').hide()
+    $('#partner-pos-1').removeClass('d-none')
+    $('#partner-pos-1').html(partnerpos1)
+})
+
+// TÊN ĐỐI TÁC 2 
+let partnername2
+$('#partner-name-2').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-name-2-edit').css("display","flex")
+})
+document.getElementById('partner-name-2-input').addEventListener('input',e => {
+    partnername2=e.target.value
+})
+$('#partner-name-2-save').click(function(){
+    $('#partner-name-2-edit').hide()
+    $('#partner-name-2').removeClass('d-none')
+    $('#partner-name-2').html(partnername2)
+})
+
+// VAI TRÒ ĐỐI TÁC 2
+let partnerpos2
+$('#partner-pos-2').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-pos-2-edit').css("display","flex")
+})
+document.getElementById('partner-pos-2-input').addEventListener('input',e => {
+    partnerpos2=e.target.value
+})
+$('#partner-pos-2-save').click(function(){
+    $('#partner-pos-2-edit').hide()
+    $('#partner-pos-2').removeClass('d-none')
+    $('#partner-pos-2').html(partnerpos2)
+})
+
+// TÊN ĐỐI TÁC 3 
+let partnername3
+$('#partner-name-3').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-name-3-edit').css("display","flex")
+})
+document.getElementById('partner-name-3-input').addEventListener('input',e => {
+    partnername3=e.target.value
+})
+$('#partner-name-3-save').click(function(){
+    $('#partner-name-3-edit').hide()
+    $('#partner-name-3').removeClass('d-none')
+    $('#partner-name-3').html(partnername3)
+})
+
+// VAI TRÒ ĐỐI TÁC 3
+let partnerpos3
+$('#partner-pos-3').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-pos-3-edit').css("display","flex")
+})
+document.getElementById('partner-pos-3-input').addEventListener('input',e => {
+    partnerpos3=e.target.value
+})
+$('#partner-pos-3-save').click(function(){
+    $('#partner-pos-3-edit').hide()
+    $('#partner-pos-3').removeClass('d-none')
+    $('#partner-pos-3').html(partnerpos3)
+})
+
+// TÊN ĐỐI TÁC 4 
+let partnername4
+$('#partner-name-4').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-name-4-edit').css("display","flex")
+})
+document.getElementById('partner-name-4-input').addEventListener('input',e => {
+    partnername4=e.target.value
+})
+$('#partner-name-4-save').click(function(){
+    $('#partner-name-4-edit').hide()
+    $('#partner-name-4').removeClass('d-none')
+    $('#partner-name-4').html(partnername4)
+})
+
+// VAI TRÒ ĐỐI TÁC 4
+let partnerpos4
+$('#partner-pos-4').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-pos-4-edit').css("display","flex")
+})
+document.getElementById('partner-pos-4-input').addEventListener('input',e => {
+    partnerpos4=e.target.value
+})
+$('#partner-pos-4-save').click(function(){
+    $('#partner-pos-4-edit').hide()
+    $('#partner-pos-4').removeClass('d-none')
+    $('#partner-pos-4').html(partnerpos4)
+})
+
+// TÊN ĐỐI TÁC 5 
+let partnername5
+$('#partner-name-5').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-name-5-edit').css("display","flex")
+})
+document.getElementById('partner-name-5-input').addEventListener('input',e => {
+    partnername5=e.target.value
+})
+$('#partner-name-5-save').click(function(){
+    $('#partner-name-5-edit').hide()
+    $('#partner-name-5').removeClass('d-none')
+    $('#partner-name-5').html(partnername5)
+})
+
+// VAI TRÒ ĐỐI TÁC 5
+let partnerpos5
+$('#partner-pos-5').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-pos-5-edit').css("display","flex")
+})
+document.getElementById('partner-pos-5-input').addEventListener('input',e => {
+    partnerpos5=e.target.value
+})
+$('#partner-pos-5-save').click(function(){
+    $('#partner-pos-5-edit').hide()
+    $('#partner-pos-5').removeClass('d-none')
+    $('#partner-pos-5').html(partnerpos5)
+})
+
+// TÊN ĐỐI TÁC 6 
+let partnername6
+$('#partner-name-6').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-name-6-edit').css("display","flex")
+})
+document.getElementById('partner-name-6-input').addEventListener('input',e => {
+    partnername6=e.target.value
+})
+$('#partner-name-6-save').click(function(){
+    $('#partner-name-6-edit').hide()
+    $('#partner-name-6').removeClass('d-none')
+    $('#partner-name-6').html(partnername6)
+})
+
+// VAI TRÒ ĐỐI TÁC 6
+let partnerpos6
+$('#partner-pos-6').click(function(){
+    $(this).toggleClass('d-none')
+    $('#partner-pos-6-edit').css("display","flex")
+})
+document.getElementById('partner-pos-6-input').addEventListener('input',e => {
+    partnerpos6=e.target.value
+})
+$('#partner-pos-6-save').click(function(){
+    $('#partner-pos-6-edit').hide()
+    $('#partner-pos-6').removeClass('d-none')
+    $('#partner-pos-6').html(partnerpos6)
 })
 // JSON 
