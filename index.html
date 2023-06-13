@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa thư mời</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- OWL CAROUSEL  -->
+	<link rel="stylesheet" href="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- CSS  -->
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <div class="home_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-1">
+	                    <div class="home_content text-center">
+	                        <h5 id="home-date">23rd jul ,2017</h5>
+							<div class="edit-input" id="home-date-input">
+								<input type="text" placeholder="Ngày tổ chức"/>
+								<button class="save-btn" id="home-date-save">X</button>
+							</div>
+	                        <h1 id="invite-heading">Thư mời tham gia</h1>
+							<div class="edit-input" id="invite-heading-input">
+								<input type="text" placeholder="Tên thư mời"/>
+								<button class="save-btn" id="invite-heading-save">X</button>
+							</div>
+	                        <div class="home_text" id="home-text">
+								<p>Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem.
+								Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+	                        </div>
+							<div class="edit-input" id="home-text-input">
+								<input type="text" placeholder="Nội dung thư mời"/>
+								<button class="save-btn" id="home-text-save">X</button>
+							</div>
+	                    </div>
+	                </div>
+                </div>
+            </div>
+        </div>
+		<div class="checkbox-container">
+			<input class="checkbox-content" type="checkbox" id="home_check" name="home-checkbox" value="content-quality">
+			<label class="label-content" for="#home_check">Ẩn/hiện phần này</label>
+		</div>
+    </header>
+	<!-- SCHEDULE AREA  -->
+	<section class="schedule_area section_padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="section_title">
+						<h1 id="invite-topic">Giải pháp Ứng dụng công nghệ vào doanh nghiệp</h1>
+						<div class="edit-input" id="invite-topic-input">
+							<input type="text" placeholder="Chủ đề buổi gặp mặt"/>
+							<button class="save-btn" id="invite-topic-save">X</button>
+						</div>
+						<p id="topic-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit</p>
+						<div class="edit-input" id="topic-text-input">
+							<input type="text" placeholder="Nội dung chủ đề"/>
+							<button class="save-btn" id="topic-text-save">X</button>
+						</div>
+						<div class="section_bar"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row tab-content justify-content-center">
+				<div class="col-md-3 schedule_col col-sm-4 col-xs-6">
+                    <div class="single_schedule">
+                        <div class="schedule_img">
+                            <img id="avt-speaker-1" src="img/schedule-speaker-1.jpg" alt="">
+							<!-- AVATAR SPEAKER 1 -->
+							<div class="edit-input" id="avt-speaker-1-input">
+								<input type="file" placeholder="Chân dung 1"/>	
+							</div>
+                        </div>
+                        <div class="schedule_foot">
+                            <p class="speaker_name" id="speaker-name-1">Nguyễn Minh Quân</p>
+							<div class="edit-input" id="speaker-name-1-input">
+								<input type="text" placeholder="Tên người 1"/>
+								<button class="save-btn" id="speaker-name-1-save">X</button>
+							</div>
+                            <p class="speaker_pos" id="speaker-pos-1">Ceo, Themeforest</p>
+							<div class="edit-input" id="speaker-pos-1-input">
+								<input type="text" placeholder="Chúc danh người 1"/>
+								<button class="save-btn" id="speaker-pos-1-save">X</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 schedule_col col-sm-4 col-xs-6">
+                    <div class="single_schedule">
+                        <div class="schedule_img">
+                            <img id="avt-speaker-2" src="img/schedule-speaker-2.jpg" alt="">
+							<!-- AVATAR SPEAKER 2 -->
+							<div class="edit-input" id="avt-speaker-2-input">
+								<input type="file" placeholder="Chân dung 2"/>	
+							</div>
+                        </div>
+                        <div class="schedule_foot">
+                            <p class="speaker_name" id="speaker-name-2">Nguyễn Minh Quân</p>
+							<div class="edit-input" id="speaker-name-2-input">
+								<input type="text" placeholder="Tên người 2"/>
+								<button class="save-btn" id="speaker-name-2-save">X</button>
+							</div>
+                            <p class="speaker_pos" id="speaker-pos-2">Ceo, lostworld</p>
+							<div class="edit-input" id="speaker-pos-2-input">
+								<input type="text" placeholder="Chúc danh người 2"/>
+								<button class="save-btn" id="speaker-pos-2-save">X</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 schedule_col col-sm-4 col-xs-6">
+                    <div class="single_schedule">
+                        <div class="schedule_img">
+                            <img id="avt-speaker-3" src="img/schedule-speaker-3.jpg" alt="">
+							<!-- AVATAR SPEAKER 3 -->
+							<div class="edit-input" id="avt-speaker-3-input">
+								<input type="file" placeholder="Chân dung 3"/>	
+							</div>
+                        </div>
+                        <div class="schedule_foot">
+                            <p class="speaker_name" id="speaker-name-3">Nguyễn Minh Quân</p>
+							<div class="edit-input" id="speaker-name-3-input">
+								<input type="text" placeholder="Tên người 3"/>
+								<button class="save-btn" id="speaker-name-3-save">X</button>
+							</div>
+                            <p class="speaker_pos" id="speaker-pos-3">Ceo, dreamworld</p>
+							<div class="edit-input" id="speaker-pos-3-input">
+								<input type="text" placeholder="Chúc danh người 3"/>
+								<button class="save-btn" id="speaker-pos-3-save">X</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 schedule_col col-sm-4 col-xs-6">
+                    <div class="single_schedule">
+                        <div class="schedule_img">
+                            <img id="avt-speaker-4" src="img/schedule-speaker-4.jpg" alt="">
+							<!-- AVATAR SPEAKER 4 -->
+							<div class="edit-input" id="avt-speaker-4-input">
+								<input type="file" placeholder="Chân dung 4"/>	
+							</div>
+                        </div>
+                        <div class="schedule_foot">
+                            <p class="speaker_name" id="speaker-name-4">Nguyễn Minh Quân</p>
+							<div class="edit-input" id="speaker-name-4-input">
+								<input type="text" placeholder="Tên người 4"/>
+								<button class="save-btn" id="speaker-name-4-save">X</button>
+							</div>
+                            <p class="speaker_pos" id="speaker-pos-4">Ceo, dreamworld</p>
+							<div class="edit-input" id="speaker-pos-4-input">
+								<input type="text" placeholder="Chúc danh người 4"/>
+								<button class="save-btn" id="speaker-pos-4-save">X</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="checkbox-container">
+			<input class="checkbox-content" type="checkbox" id="home_check" name="home-checkbox" value="content-quality">
+			<label class="label-content" for="#home_check">Ẩn/hiện phần này</label>
+		</div>
+	</section>
+
+   <!-- SUBSCRIBE AREA  -->
+	<section class="subscribe_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div id="mc_embed_signup">
+                        <div action="http://crazycafe.us13.list-manage.com/subscribe/post?u=8b098ef4cf6323e5b448b2b8b&amp;id=916b5e9f2d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe clearfix" target="_blank" novalidate="">
+                            <h1 id="ads-heading">Đừng bỏ lỡ sự kiện</h1>
+							<div class="edit-input" id="ads-heading-input">
+								<input type="text" placeholder="Promotion heading"/>
+								<button class="save-btn" id="ads-heading-save">X</button>
+							</div>
+                            <p id="ads-text">Đăng kí ngay hôm nay</p>
+							<div class="edit-input" id="ads-text-input">
+								<input type="text" placeholder="Promotion text"/>
+								<button class="save-btn" id="ads-text-save">X</button>
+							</div>
+                            <a href="#reg" class="to-reg-btn" id="to-reg-btn">tới form đăng kí</a>
+							<div class="edit-input" id="to-reg-btn-input">
+								<input type="text" placeholder="Nút tới phần đăng kí"/>
+								<button class="save-btn" id="to-reg-btn-save">X</button>
+							</div>
+						</div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SPEAKER AREA  -->
+	<section class="speaker_area section_padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="section_title">
+						<h1 id="partner-heading"> event speakers</h1>
+						<div class="edit-input" id="partner-heading-input">
+							<input type="text" placeholder="Tiêu đề đối tác"/>
+							<button class="save-btn" id="partner-heading-save">X</button>
+						</div>
+						<p id="partner-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit</p>
+						<div class="edit-input" id="partner-text-input">
+							<input type="text" placeholder="Nội dung phần đối tác"/>
+							<button class="save-btn" id="partner-text-save">X</button>
+						</div>
+						<div class="section_bar"></div>
+					</div>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" >
+					<div class="speaker_slider owl-carousel owl-theme owl-loaded">
+						<div class="owl-stage-outer">
+							<div class="owl-stage">
+								<div class="owl-item">
+									<figure>
+										<div class="figbg" >
+											<img id="avt-partner-1" src="./img/speaker-1.jpg"/>
+											<!-- AVATAR PARTNER 1 -->
+											<div class="edit-input" id="avt-partner-1-input">
+												<input type="file" placeholder="Chân dung đối tác 1"/>	
+											</div>
+										</div>
+										<figcaption>
+											<h4>jim corbat</h4>
+											<span>Ceo, Lostworld</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="owl-item">
+									<figure>
+										<div class="figbg">
+											<img id="avt-partner-2" src="./img/speaker-2.jpg"/>
+											<!-- AVATAR PARTNER 2 -->
+											<div class="edit-input" id="avt-partner-2-input">
+												<input type="file" placeholder="Chân dung đối tác 2"/>	
+											</div>
+										</div>
+										<figcaption>
+											<h4>jim corbat</h4>
+											<span>Ceo, Lostworld</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="owl-item">
+									<figure>
+										<div class="figbg">
+											<img id="avt-partner-3" src="./img/speaker-3.jpg"/>
+											<!-- AVATAR PARTNER 3 -->
+											<div class="edit-input" id="avt-partner-3-input">
+												<input type="file" placeholder="Chân dung đối tác 3"/>	
+											</div>
+										</div>
+										<figcaption>
+											<h4>jim corbat</h4>
+											<span>Ceo, Lostworld</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="owl-item">
+									<figure>
+										<div class="figbg" >
+											<img id="avt-partner-4" src="./img/speaker-1.jpg"/>
+											<!-- AVATAR PARTNER 4 -->
+											<div class="edit-input" id="avt-partner-4-input">
+												<input type="file" placeholder="Chân dung đối tác 1"/>	
+											</div>
+										</div>
+										<figcaption>
+											<h4>jim corbat</h4>
+											<span>Ceo, Lostworld</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="owl-item">
+									<figure>
+										<div class="figbg">
+											<img id="avt-partner-5" src="./img/speaker-2.jpg"/>
+											<!-- AVATAR PARTNER 5 -->
+											<div class="edit-input" id="avt-partner-5-input">
+												<input type="file" placeholder="Chân dung đối tác 5"/>	
+											</div>
+										</div>
+										<figcaption>
+											<h4>jim corbat</h4>
+											<span>Ceo, Lostworld</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="owl-item">
+									<figure>
+										<div class="figbg">
+											<img id="avt-partner-6" src="./img/speaker-3.jpg"/>
+											<!-- AVATAR PARTNER 6 -->
+											<div class="edit-input" id="avt-partner-6-input">
+												<input type="file" placeholder="Chân dung đối tác 6"/>	
+											</div>
+										</div>
+										<figcaption>
+											<h4>jim corbat</h4>
+											<span>Ceo, Lostworld</span>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="owl-nav">
+							<div class="owl-prev">
+								<!-- <i class="fas fa-chevron-left"></i> -->
+							</div>
+							<div class="owl-next">
+								<!-- <i class="fas fa-chevron-right"></i> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="checkbox-container">
+			<input class="checkbox-content" type="checkbox" id="speaker_check" name="home-checkbox" value="content-quality">
+			<label class="label-content" for="#speaker_check">Ẩn/hiện phần này</label>
+		</div>
+	</section>
+
+	<!-- TESTIMOTIONAL   -->
+	<section class="testimonial_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1">
+					<div class="testimonial_slider owl-carousel owl-theme owl-loaded">		
+						<div class="owl-stage-outer">
+							<div class="owl-stage" >
+								<div class="owl-item ">
+									<div class="single_testimonial clearfix">
+										<div class="testimonial_img">
+											<img src="img/client-1.jpg" alt="">
+										</div>
+										<div class="testimonial_right clearfix">
+											<p>Nam liber tempor cum soluta nobis eleifend option congue nihil mperdiet doming mazim</p>
+											<div class="testimonial_bottom">
+												<p>Roger Frost</p>
+												<p>CTO, Lostworld</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item ">
+									<div class="single_testimonial clearfix">
+										<div class="testimonial_img">
+											<img src="img/client-2.jpg" alt="">
+										</div>
+										<div class="testimonial_right clearfix">
+											<p>Nam liber tempor cum soluta nobis eleifend option congue nihil mperdiet doming mazim</p>
+											<div class="testimonial_bottom">
+												<p>Rogina Frost</p>
+												<p>CTO, Lostworld</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item ">
+									<div class="single_testimonial clearfix">
+										<div class="testimonial_img">
+											<img src="img/client-1.jpg" alt="">
+										</div>
+										<div class="testimonial_right clearfix">
+											<p>Nam liber tempor cum soluta nobis eleifend option congue nihil mperdiet doming mazim</p>
+											<div class="testimonial_bottom">
+												<p>Roger Frost</p>
+												<p>CTO, Lostworld</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item">
+									<div class="single_testimonial clearfix">
+										<div class="testimonial_img"><img src="img/client-2.jpg" alt=""></div>
+										<div class="testimonial_right clearfix">
+											<p>Nam liber tempor cum soluta nobis eleifend option congue nihil mperdiet doming mazim</p>
+											<div class="testimonial_bottom">
+												<p>Rogina Frost</p>
+												<p>CTO, Lostworld</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item ">
+									<div class="single_testimonial clearfix">
+										<div class="testimonial_img">
+											<img src="img/client-1.jpg" alt="">
+										</div>
+										<div class="testimonial_right clearfix">
+											<p>Nam liber tempor cum soluta nobis eleifend option congue nihil mperdiet doming mazim</p>
+											<div class="testimonial_bottom">
+												<p>Roger Frost</p>
+												<p>CTO, Lostworld</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item">
+									<div class="single_testimonial clearfix">
+										<div class="testimonial_img">
+											<img src="img/client-2.jpg" alt="">
+										</div>
+										<div class="testimonial_right clearfix">
+											<p>Nam liber tempor cum soluta nobis eleifend option congue nihil mperdiet doming mazim</p>
+											<div class="testimonial_bottom">
+												<p>Rogina Frost</p>
+												<p>CTO, Lostworld</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="owl-nav">
+									<div class="owl-prev">
+										<!-- <i class="fas fa-chevron-left"></i> -->
+									</div>
+									<div class="owl-next">
+										<!-- <i class="fas fa-chevron-right"></i> -->
+									</div>
+								</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="checkbox-container">
+			<input class="checkbox-content" type="checkbox" id="testimonial_check" name="home-checkbox" value="content-quality">
+			<label class="label-content" for="#testimonial_check">Ẩn/hiện phần này</label>
+		</div>
+		
+	</section>
+    <!-- REGISTRATION AREA  -->
+    <section class="reg_area" id="reg">
+		<div class="outer_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" >
+						<div class="reg_title">
+							<h3>Đăng kí tham dự:</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<form action="#" class="reg_form ">                      
+						<div class="col-lg-4 col-md-3 col-sm-4" style="margin-bottom:30px" >
+							<div class="single_input">
+								<input type="text" placeholder="Họ & tên">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-3 col-sm-4"  style="margin-bottom:30px">
+							<div class="single_input">
+								<input type="email" placeholder="Email">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-3 col-sm-4 bdr"  style="margin-bottom:30px">
+							<div class="single_input">
+								<input type="text" placeholder="Số điện thoại">
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+							<div class="row">
+								<p class="difficulties" style="padding-left:20px">Doanh nghiệp bạn khó khăn trong:</p>
+								<div class="col-12 text-left" style="padding-left:30px">
+									<input type="checkbox" id="content-quality" name="video-length" value="video-length">
+									<label class="content-label" for="video-length">Tiếp cận nguồn vốn.</label>
+								</div>
+								
+								<div class="col-12 text-left" style="padding-left:30px">
+									<input type="checkbox" id="content-quality" name="content-quality" value="content-quality">
+									<label class="content-label" for="content-quality">Tối ưu vận hành, quản lý.</label>
+								</div>
+								
+								<div class="col-12 text-left" style="padding-left:30px">
+									<input type="checkbox" id="content-quality" name="content-quality" value="content-quality">
+									<label class="content-label" for="content-quality">Marketing sản phẩm & dịch vụ.</label>
+								</div>
+								
+								<div class="col-12 text-left" style="padding-left:30px">
+									<input type="checkbox" id="content-quality" name="content-quality" value="content-quality">
+									<label class="content-label" for="content-quality">Pháp lý & kế toán.</label>
+								</div>
+								
+								<div class="col-12 text-left" style="padding-left:30px">
+									<input type="checkbox" id="content-quality" name="content-quality" value="content-quality">
+									<label class="content-label" for="content-quality">Tìm đầu ra, nguồn khách hàng.</label>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+							<fieldset>
+								<legend>Quy mô doanh nghiệp của bạn:</legend>
+								<row>
+									<div class="col-12 text-left">
+										<input type="radio" name="action" checked="" id="definitely" value="definitely">
+										<label class="def-label" for="definitely">5-50 nhân sự</label>
+									</div>
+									<div class="col-12 text-left">
+										<input type="radio" name="action" checked="" id="definitely" value="definitely">
+										<label class="def-label" for="definitely">100-500 nhân sự</label>
+									</div>
+									<div class="col-12 text-left">
+										<input type="radio" name="action" checked="" id="definitely" value="definitely">
+										<label class="def-label" for="definitely"> Hơn 500 nhân sự</label>
+									
+									</div>
+								</row>
+							</fieldset>
+						</div>
+						<div class="col-lg-12 col-sm-12 textarea-fb">
+							<p class="difficulties">Mong muốn khi tới tham dự:</p>
+							<textarea style="width:calc(100% - 10px);height:150px; margin-bottom: 30px; padding:10px">
+							</textarea>
+						</div>
+						<div class="col-lg-12 col-12 submit-btn">
+							<div class="single_input">
+								<button type="submit">Đăng kí ngay</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="checkbox-container">
+			<input class="checkbox-content" type="checkbox" id="reg_check" name="home-checkbox" value="content-quality">
+			<label class="label-content" for="#reg_check">Ẩn/hiện phần này</label>
+		</div>
+	</section>
+
+    <!-- BENEFIT AREA  -->
+    <section class="faq_area section_padding">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2">                    
+					<div class="faq">
+						<div class="faq_title">
+							<h2>Doanh nghiệp: Bạn đang cần tư vấn và hỗ trợ:</h2>
+						</div>
+						<dl class="accordion style2">
+							<div class="active benefit-item">Truyền thông, marketing sản phẩm, dịch vụ.</div>
+				
+							<div class="benefit-item">Tối ưu vận hành, quản lí</div>
+							
+							<div class="benefit-item">Nguồn vốn, dòng tiền</div>
+							
+							<div class="benefit-item">Pháp lí và kế toán.</div>
+							
+							<div class="benefit-item">Đầu ra, nguồn khách hàng</div>
+							
+						</dl>
+					</div>
+				</div>
+				<div class="col-md-5 col-md-offset-2 col-sm-8 col-sm-offset-2">
+					<div class="sponsor_title">
+						<h2>Hình ảnh</h2>
+					</div>
+					<div class="sponsor">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-6">
+								<div class="single_sponsor">
+									<img src="img/sponsor-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6">
+								<div class="single_sponsor">
+									<img src="img/sponsor-2.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6">
+								<div class="single_sponsor">
+									<img src="img/sponsor-3.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6">
+								<div class="single_sponsor">
+									<img src="img/sponsor-4.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6">
+								<div class="single_sponsor">
+									<img src="img/sponsor-5.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6">
+								<div class="single_sponsor">
+									<img src="img/sponsor-6.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="checkbox-container">
+			<input class="checkbox-content" type="checkbox" id="faq_check" name="home-checkbox" value="content-quality">
+			<label class="label-content" for="#faq_check">Ẩn/hiện phần này</label>
+		</div>
+	</section>
+
+    <!-- GOOGLE MAP + CONTACT INFO  -->
+    <section class="map_area">
+        <div id="googleMap" >
+           
+			<div class="map-wrapper">
+				<div class="map-container">
+				</div>
+				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6515.210978126394!2d106.18764561152116!3d20.411008423765843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135e0c953e3c769%3A0xbf595905a4c052fa!2zMjUwIMSQxrDhu51uZyDEkOG6t25nIFh1w6JuIELhuqNuZywgTmFtIFbDom4sIFRQLiBOYW0gxJDhu4tuaCwgTmFtIMSQ4buLbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1686541028712!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+        </div>
+        <div class="map_content_area">
+            <div class="map_content">
+                <div class="contact_info_top">
+                    <h5>thông tin liên hệ</h5>
+                    <div class="contact_info_left">
+                        <div class="contact_icon">
+                            <span class="icon-map-pin"></span>
+                        </div>
+                        <p>250 Đặng Xuân Bảng, Nam Vân, TP.Nam Định</p>
+                    </div>
+                    <div class="contact_info_left">
+                        <div class="contact_icon">
+                            <span class="icon-envelope"></span>
+                        </div>
+                        <p>crazycafe.net@gmail.com</p>
+                    </div>
+                    <div class="contact_info_left">
+                        <div class="contact_icon">
+                            <span class="icon-phone"></span>
+                        </div>
+                        <p>0986294717</p>
+                    </div>
+                </div>
+                <!-- <div class="contact_link">
+                    <ul>
+                        <li><a href="#" class="icon-facebook"></a></li>
+                        <li><a href="#" class="icon-twitter"></a></li>
+                        <li><a href="#" class="icon-googleplus"></a></li>
+                        <li><a href="#" class="icon-linkedin"></a></li>
+                    </ul>
+                </div> -->
+            </div>
+		</div>
+		<div class="checkbox-container">
+			<input class="checkbox-content" type="checkbox" id="map_check" name="home-checkbox" value="content-quality">
+			<label class="label-content" for="#map_check">Ẩn/hiện phần này</label>
+		</div>
+    </section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- OWL CAROUSEL  -->
+	<script src="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>
