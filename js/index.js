@@ -797,4 +797,94 @@ $('#testimonial-name-1-save').click(function(){
     $('#testimonial-name-1').removeClass('d-none')
     $('#testimonial-name-1').html(testimonialname1)
 })
+
+// TÊN NGƯỜI PHÁT BIỂU 2
+let testimonialname2
+$('#testimonial-name-2').click(function(){
+    $(this).toggleClass('d-none')
+    $('#testimonial-name-2-edit').css("display","flex")
+})
+document.getElementById('testimonial-name-2-input').addEventListener('input',e => {
+    testimonialname2=e.target.value
+})
+$('#testimonial-name-2-save').click(function(){
+    $('#testimonial-name-2-edit').hide()
+    $('#testimonial-name-2').removeClass('d-none')
+    $('#testimonial-name-2').html(testimonialname2)
+})
+
+// TÊN NGƯỜI PHÁT BIỂU 3
+let testimonialname3
+$('#testimonial-name-3').click(function(){
+    $(this).toggleClass('d-none')
+    $('#testimonial-name-3-edit').css("display","flex")
+})
+document.getElementById('testimonial-name-3-input').addEventListener('input',e => {
+    testimonialname3=e.target.value
+})
+$('#testimonial-name-3-save').click(function(){
+    $('#testimonial-name-3-edit').hide()
+    $('#testimonial-name-3').removeClass('d-none')
+    $('#testimonial-name-3').html(testimonialname3)
+})
+
+// CHỨC DANH NGƯỜI PHÁT BIỂU 1
+let testimonialpos1
+$('#testimonial-pos-1').click(function(){
+    $(this).toggleClass('d-none')
+    $('#testimonial-pos-1-edit').css("display","flex")
+})
+document.getElementById('testimonial-pos-1-input').addEventListener('input',e => {
+    testimonialpos1=e.target.value
+})
+$('#testimonial-pos-1-save').click(function(){
+    $('#testimonial-pos-1-edit').hide()
+    $('#testimonial-pos-1').removeClass('d-none')
+    $('#testimonial-pos-1').html(testimonialpos1)
+})
+
+// CHỨC DANH NGƯỜI PHÁT BIỂU 2
+let testimonialpos2
+$('#testimonial-pos-2').click(function(){
+    $(this).toggleClass('d-none')
+    $('#testimonial-pos-2-edit').css("display","flex")
+})
+document.getElementById('testimonial-pos-2-input').addEventListener('input',e => {
+    testimonialpos2=e.target.value
+})
+$('#testimonial-pos-2-save').click(function(){
+    $('#testimonial-pos-2-edit').hide()
+    $('#testimonial-pos-2').removeClass('d-none')
+    $('#testimonial-pos-2').html(testimonialpos2)
+})
+
+// CHỨC DANH NGƯỜI PHÁT BIỂU 3
+let testimonialpos3
+$('#testimonial-pos-3').click(function(){
+    $(this).toggleClass('d-none')
+    $('#testimonial-pos-3-edit').css("display","flex")
+})
+document.getElementById('testimonial-pos-3-input').addEventListener('input',e => {
+    testimonialpos3=e.target.value
+})
+$('#testimonial-pos-3-save').click(function(){
+    $('#testimonial-pos-3-edit').hide()
+    $('#testimonial-pos-3').removeClass('d-none')
+    $('#testimonial-pos-3').html(testimonialpos3)
+})
+
+// REGISTRATION HEADING
+let regheading
+$('#reg-heading').click(function(){
+    $(this).toggleClass('d-none')
+    $('#reg-heading-edit').css("display","flex")
+})
+document.getElementById('reg-heading-input').addEventListener('input',e => {
+    regheading=e.target.value
+})
+$('#reg-heading-save').click(function(){
+    $('#reg-heading-edit').hide()
+    $('#reg-heading').removeClass('d-none')
+    $('#reg-heading').html(regheading)
+})
 // JSON 
