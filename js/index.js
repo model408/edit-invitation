@@ -2,7 +2,7 @@
 // OWL CAROUSEL 
 $(document).ready(function(){
     $(".testimonial_slider").owlCarousel({
-        loop:true,
+        // loop:true,
         responsiveClass:true,
         nav:true,
         margin:20,
@@ -685,5 +685,116 @@ $('#partner-pos-6-save').click(function(){
     $('#partner-pos-6-edit').hide()
     $('#partner-pos-6').removeClass('d-none')
     $('#partner-pos-6').html(partnerpos6)
+})
+
+// AVT CẢM NGHĨ 1
+let avttestimonial1
+const inputtestimonial1 = document.getElementById('avt-testimonial-1-input')
+const imagetestimonial1 = document.getElementById('avt-testimonial-1');
+inputtestimonial1.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+        avttestimonial1 = URL.createObjectURL(e.target.files[0]);
+        imagetestimonial1.src=avttestimonial1
+    }
+    $('#avt-testimonial-1-edit').hide()
+    $('#avt-testimonial-1').removeClass('d-none')
+});
+$('#avt-testimonial-1').click(function(){
+    $(this).toggleClass('d-none')
+    $('#avt-testimonial-1-edit').css("display","flex")
+})
+
+// AVT CẢM NGHĨ 2
+let avttestimonial2
+const inputtestimonial2 = document.getElementById('avt-testimonial-2-input')
+const imagetestimonial2 = document.getElementById('avt-testimonial-2');
+inputtestimonial2.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+        avttestimonial2 = URL.createObjectURL(e.target.files[0]);
+        imagetestimonial2.src=avttestimonial2
+    }
+    $('#avt-testimonial-2-edit').hide()
+    $('#avt-testimonial-2').removeClass('d-none')
+});
+$('#avt-testimonial-2').click(function(){
+    $(this).toggleClass('d-none')
+    $('#avt-testimonial-2-edit').css("display","flex")
+})
+
+// CẢM NGHĨ 1
+let avttestimonial3
+const inputtestimonial3 = document.getElementById('avt-testimonial-3-input')
+const imagetestimonial3 = document.getElementById('avt-testimonial-3');
+inputtestimonial3.addEventListener('change', (e) => {
+    if (e.target.files.length) {
+        avttestimonial3 = URL.createObjectURL(e.target.files[0]);
+        imagetestimonial3.src=avttestimonial3
+    }
+    $('#avt-testimonial-3-edit').hide()
+    $('#avt-testimonial-3').removeClass('d-none')
+});
+$('#avt-testimonial-3').click(function(){
+    $(this).toggleClass('d-none')
+    $('#avt-testimonial-3-edit').css("display","flex")
+})
+
+// CẢM NGHĨ 1
+let testimonial1
+$('#testimonial-text-1').click(function(){
+    $(this).toggleClass('d-none')
+    $('#testimonial-text-1-edit').css("display","flex")
+})
+document.getElementById('testimonial-text-1-input').addEventListener('input',e => {
+    testimonial1=e.target.value
+})
+$('#testimonial-text-1-save').click(function(){
+    $('#testimonial-text-1-edit').hide()
+    $('#testimonial-text-1').removeClass('d-none')
+    $('#testimonial-text-1').html(testimonial1)
+})
+
+// CẢM NGHĨ 2
+let testimonial2
+$('#testimonial-text-2').click(function(){
+    $(this).toggleClass('d-none')
+    $('#testimonial-text-2-edit').css("display","flex")
+})
+document.getElementById('testimonial-text-2-input').addEventListener('input',e => {
+    testimonial2=e.target.value
+})
+$('#testimonial-text-2-save').click(function(){
+    $('#testimonial-text-2-edit').hide()
+    $('#testimonial-text-2').removeClass('d-none')
+    $('#testimonial-text-2').html(testimonial2)
+})
+
+// CẢM NGHĨ 3
+let testimonial3
+$('#testimonial-text-3').click(function(){
+    $(this).toggleClass('d-none')
+    $('#testimonial-text-3-edit').css("display","flex")
+})
+document.getElementById('testimonial-text-3-input').addEventListener('input',e => {
+    testimonial3=e.target.value
+})
+$('#testimonial-text-3-save').click(function(){
+    $('#testimonial-text-3-edit').hide()
+    $('#testimonial-text-3').removeClass('d-none')
+    $('#testimonial-text-3').html(testimonial3)
+})
+
+// TÊN NGƯỜI PHÁT BIỂU 1
+let testimonialname1
+$('#testimonial-name-1').click(function(){
+    $(this).toggleClass('d-none')
+    $('#testimonial-name-1-edit').css("display","flex")
+})
+document.getElementById('testimonial-name-1-input').addEventListener('input',e => {
+    testimonialname1=e.target.value
+})
+$('#testimonial-name-1-save').click(function(){
+    $('#testimonial-name-1-edit').hide()
+    $('#testimonial-name-1').removeClass('d-none')
+    $('#testimonial-name-1').html(testimonialname1)
 })
 // JSON 

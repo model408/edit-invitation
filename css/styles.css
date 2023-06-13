@@ -597,8 +597,8 @@ form.reg_form .col-md-3 .single_input {
 }
 .testimonial_img img {
     border-radius: 50%;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     border: 2px solid #fff;
 }
 .testimonial_right {
